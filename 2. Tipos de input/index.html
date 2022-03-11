@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+<body>
+    <form action="">
+        <!-- A tag 'input' tem vários tipos e todos os tipos tem funcionalidades diferentes. Nesta aula, abordaremos sobre algum deles. -->
+        <input type="text" name="nome"><br> <!-- Este é o input mais básico que tem, que é para a introdução de textos.-->
+        <input type="password" name="senha"><br>
+        <!-- Esse input recebe texto/números, mas diferente do 'text' ele não deixa visivel na tela os caracteres colocados. -->
+        <input type="checkbox" name="curso" value="ReactNative">React Native
+        <input type="checkbox" name="curso" value="React.JS">React.JS      <br>
+        <!-- Esse é o checkbox, aquela caixinha que fica marcada, o grande problema dela é como no exemplo acima, se eu tiver vários tipos de cursos disponiveis e o usuário decidir optar por todos. Assim, cria-se a necessidade de saber qual é qual lá no meu back-end, por isso, usamos o 'value' que dirá ao back-end qual está marcado ou não. -->
+        <input type="radio" name="genero" checked>Masculino
+        <input type="radio" name="genero">Feminino  <br>
+        <!-- Esse é o radio, ele é bem parecido com o checkbox, mas caso eu tenha vários radio com o mesmo 'name', eu posso ter apenas um marcado. Para que sempre fique pelo menos um marcado, eu posso passar um 'checked', assim, por padrão, aquele que tiver o checked sempre ficará marcado. No exemplo, foi ilustrado com a ideia do sexo. -->
+
+        <input type="reset" value="Limpar formulário">      
+        <!-- Esse é o reset, ele limpa a página, retornando a mesma para o padrão dela. Ele recebe o value para que seja alterado o nome do botão na tela. -->
+
+        <input type="submit" value="Enviar formulário">
+        <!-- Esse é o submit, o famoso enviar, que enviará o formulário ao destinatário previamente definido. Também pode receber 'value' para alterar seu nome na tela. -->
+
+    </form>
+
+</body>
+</html>

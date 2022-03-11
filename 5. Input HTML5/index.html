@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input HTML5</title>
+</head>
+<body>
+    <!-- Com a introdução do HTML5 surgiu várias novidades, o problema é que essas novidades não são compativeis com todos os tipos de navegadores, fazendo assim, que seja necessário verificação de compatibilidade em algum site ou testes de formas manuais. -->
+
+    <!-- Nesta aula, vamos ver os novos tipos de inputs que vieram com o HTML5! -->
+<form method="GET" action="">
+    
+    <input type="color" name="cores"><br>
+    <!-- Esse é o 'color', nele podemos, apartir de uma paleta de cores, selecionar uma cor especifica de forma manual. Ao enviar ao back-end, será passado o valor RGB, hexadecimal ou HSL conforme selecionado. -->
+
+    <input type="date" name="data"><br>
+    <!-- Esse é o 'date', nele é possivel abrir um calendário e selecionar o dia, mês e ano.-->
+
+    <input type="datetime-local" name="datahora"><br>
+    <!-- Esse é o 'datetime-local', nele é possivel escolher além da data, a hora.-->
+
+    <input type="file" name="arquivo"><br>
+    <!-- Esse é o 'file', com ele é possivel escolher um arquivo para que seja enviado ao servidor. Nesse tipo, é imporante lembrar que o 'method' esteja como GET no formulário, para que o back-end possa manipular esse arquivo enviado. -->
+
+    <input type="number" name="numeros" min="5" max="10"><br>
+    <!-- Esse é o 'number', nele é possivel colocar apenas números. Posso definir um minimo e um maximo também, utilizando 'min' e 'max'-->
+
+    <input type="range" name="intervalo" min="1" max="5" value="2"><br>
+    <!-- Esse é o 'range', ele é como um intervalo, também posso definir valor minimo e maximo para ele. Também posso definir onde será o seu inicio usando o value-->
+
+    <input type="tel" name="telefone"><br>
+    <!-- Esse é o 'tel', ele é mais comum utilizado quando você sabe que seu site vai ser rodado em um celular. Ele é bem parecido com o 'number' ou até mesmo o 'text', mas quando aberto no celular, ele mostrará apenas o teclado numerico.-->
+
+    <input type="email" name="email">
+    <!-- Esse é o 'email', ele é o que mais lembra o 'text', a diferença é que se eu tentar enviar algo que não tenha a anatomia de um email (exemplo@email.com) ele não irá enviar e notificará o usuário sobre o possivel erro. -->
+
+    <input type="submit" value="Enviar formulário">
+</form>
+</body>
+</html>

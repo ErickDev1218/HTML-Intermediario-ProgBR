@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--É importante entender a mecânica dos formulários na web. Os formulários são os mensageiros entre o front-end e o back-end, eles que levam informações importantes do front pro back. Na aula, vimos o exemplo do uso disso em sites de pesquisas como o YouTube e o Google.
+    
+    Mas como se cria um formulário?-->
+
+    <!-- <form method="get" action="" >    </form> 
+     O 'method' tem duas variáveis, o POST que é bem mais utilizado em momento de login, onde o usuário dispões de um senha que não quer que seja vista e o GET que mostrará o que o usuário procurou na barra de URL. É importante também saber o que seu Back-end está esperando, se ele espera um GET, o envie um GET, se ele espera um POST, o envie um POST.
+
+     Na parte de 'action' vai o dominio do site, é onde será buscado aquilo que for enviado.
+
+    Mas apenas com a tag 'form' eu ainda não tenho campos para digitar, por isso, é necessário criar um input.-->
+
+    <!-- <input type="text" name="email">
+    Dentro do input existe o 'type' e o 'name'. O 'type' fala justamente do tipo de input que eles espera receber, neste caso, um texto. Já o name é algo que se usa para diferenciar, por exemplo, se eu tiver vários input do tipo text, meu navegador irá precisar entender que cada um é para algo, no exemplo acima, o navegador irá entender que é um email. -->
+
+    <!-- Também se faz necessário a criação de um botão para que os dados sejam levados, um ponto de partida. Neste exemplo, usaremos um input de outro type, do type submite -->
+
+    <!-- Agora um exemplo prático -->
+
+    <!--
+        <form method="POST" action="/cadastro">
+        <input type="text" name="email">
+        <input type="submit">
+        </form> 
+    -->
+    
+    <!-- O exemplo acima não funciona pois o meu dominio atual é o 'C:' do meu próprio computador. Mas agora, criaremos um exemplo que funcionará a partir do dominio do YouTube. -->
+
+    
+    <form method="get" action="https://www.youtube.com/results" >
+        <input type="text" name="search_query" >
+        <input type="submit">
+    </form>
+
+</body>
+</html>
